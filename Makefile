@@ -4,7 +4,7 @@
 MEMORY_ALL= 1024 768 640 512 384 256
 
 DOCKER=		docker
-DOCKER_FILE=	Dockerfile
+DOCKERFILE=	Dockerfile
 DOCKER_TAG=	cpan/memory
 MEMORY_LOG=	memory.log
 
@@ -28,7 +28,7 @@ check: memory
 memory:
 	for i in ${MEMORY_ALL}; \
 	do \
-	  time ${DOCKER} build --no-cache -m $${i}m -t ${DOCKER_TAG}/$$i -f ${DOCKER_FILE} . > ${MEMORY_LOG}.$$i 2>&1 & \
+	  time ${DOCKER} build --no-cache -m $${i}m -t ${DOCKER_TAG}/$$i -f ${DOCKERFILE} . > ${MEMORY_LOG}.$$i 2>&1 & \
 	done; wait
 	${MAKE} -s images | grep ${DOCKER_TAG}
 	${MAKE} log
@@ -40,6 +40,8 @@ help:
 	@echo "usage:"
 	@echo ""
 	@echo "make check"
+	@echo "make DOCKERFILE=Dockerfile.rockylinux check"
+	@echo ""
 	@echo "make log"
 	@echo "make clean"
 

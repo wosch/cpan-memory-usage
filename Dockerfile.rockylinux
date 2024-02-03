@@ -1,0 +1,7 @@
+FROM rockylinux:9
+MAINTAINER Wolfram Schneider <wosch@FreeBSD.org>
+
+RUN yum install -y perl make
+
+RUN cpan Test::More
+
