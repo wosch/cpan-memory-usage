@@ -1,6 +1,6 @@
 Check the memory usage of cpan and find out the minimal
-required memory setup for machine to install the LWP module.
+required memory setup for machine to install the Test::More module.
 
 --
-Feb 2024
+wosch, Feb 2024
 
