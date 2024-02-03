@@ -8,6 +8,8 @@ A local docker installation, and 8GB RAM if testing in parallel (default).
 
 Usage
 ---------------
+# this will take 1.5 - 3 minutes depending on your local CPU speed and network
+
 $ make check
 
 --
