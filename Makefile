@@ -37,6 +37,8 @@ log:
 	tail -n3  $$(ls -tr ${MEMORY_LOG}.[0-9]*)
 	
 help:
+	@echo "usage:"
+	@echo ""
 	@echo "make check"
 	@echo "make log"
 	@echo "make clean"
