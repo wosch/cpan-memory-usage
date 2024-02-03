@@ -1,6 +1,7 @@
-# Copyright (c) 2022-2023 Wolfram Schneider, https://bbbike.org
+# Copyright (c) 2022-2024 Wolfram Schneider, https://bbbike.org
 #
 
+# max. memory used by docker
 MEMORY_ALL= 1024 768 640 512 384 256
 
 DOCKER=		docker
