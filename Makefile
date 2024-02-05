@@ -2,7 +2,7 @@
 #
 
 # max. memory used by docker
-MEMORY_ALL= 1024 768 640 512 384 256
+MEMORY_ALL= 640 512 384
 
 DOCKER=		docker
 DOCKERFILE=	Dockerfile
