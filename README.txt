@@ -3,7 +3,7 @@ for a machine to install the Test::More module for perl.
 
 Requirements
 ---------------
-A local docker installation, and 8GB RAM if testing in parallel (default).
+A local docker installation, and 4GB RAM if testing in parallel (default).
 
 
 Usage
